@@ -1,0 +1,352 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Material theme */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+/* Material fonts */
+// @import "~material-icons/iconfont/material-icons.css";
+/*
+
+This is not working, even if it works for the FDB.
+Some solution might be : https://github.com/angular/angular-cli/issues/2662
+
+Currently manually placing the content of the failed imports
+*/
+/* @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~https://fonts.googleapis.com/icon?family=Roboto'; */
+
+/* https://fonts.googleapis.com/icon?family=Material+Icons */
+
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+    format("woff2");
+}
+
+.mat-bottom-sheet-container {
+  padding: 0px !important;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.info-small {
+  font-size: 10px;
+  border: 1px solid yellow;
+  margin: 2px;
+  padding: 2px;
+}
+
+.info-normal {
+  font-size: 12px;
+  border: 1px solid yellow;
+  margin: 2px;
+  padding: 2px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* https://fonts.googleapis.com/icon?family=Roboto */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.padding {
+  padding: 2px;
+}
+
+.padding5 {
+  padding: 5px;
+}
+
+.demo_sub_block {
+  border: 1px solid black;
+  padding: 3px;
+}
+.demo_block {
+  /*border: 2px solid red;*/
+  padding: 5px;
+}
+
+.logo-preloader{
+  max-width: 200px;
+  object-fit: contain;
+  transform-origin: 50% 50%;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.logo-preloader-img{
+  max-width: 200px;
+  object-fit: contain;
+}
+
+/* rotating - start */
+.rotating {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+/* these 3 spin lines are also required for rotating */
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* rotating - end */
+
+/* for avoiding wrapping of the text  when positioned absolutely */
+.max-width {
+  width: max-content;
+}
+
+.bordered{
+  padding: 2px;
+  border: 1px solid black;
+}
+
+.a-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/*
+Mouse Cursors used through out the app:
+the whole list: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+*/
+.pointer {
+  cursor: pointer;
+}
+
+.zoom-in-pt {
+  cursor: zoom-in;
+}
+
+.zoom-out-pt {
+  cursor: zoom-out;
+}
+
+.error {
+  color: red;
+}
+
+/* VERTICAL CENTERING - START */
+.relative-container {
+  position: relative;
+}
+
+/* requires that the parent has `relative-container` class */
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* VERTICAL CENTERING - END */
+
+.badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607d8b;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+.bordered_light {
+  padding: 2px;
+  border: 1px solid gray;
+}
+
+/* used to force content not to expand on the right side to occupy empty space - otherwise tooltips are displayed far right, after that empty space */
+.fit-content {
+  width: fit-content;
+}
+
+.keeping-scrollable {
+  /* keeping-encapsulated-content-scrollable
+  All the components that are in the parent-line of a scrollable content with "height:100%", should also have height:100%  */
+  height: 100% !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+/* for scrolling, similar to `.keeping-scrollable`, but also with
+`box-sizing: border-box;` for preventing showing other scollers, etc
+*/
+html,
+body,
+app-root,
+nav,
+router-outlet,
+.full-container {
+  height: 100% !important;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ehmphasize {
+  font-weight: bold;
+}
+
+/* used for additional, smaller descirpitons of UI*/
+.description {
+  font-style: italic;
+  font-size: smaller;
+  opacity: 0.8;
+}
+
+button {
+  margin: 2px !important; /*it gets overriden by the `.mat-raised-button` class */
+}
+
+/******************
+* MATERIAL PATCHES
+******************/
+
+/* This is for `src/frontend/dev_puzzles/moderation/core/moderation-panel/insights/user-actions-statuses/user-actions-statuses.component.html`.
+But we cannot style tha Material component by putting the CSS in the component's .css It has to be in global `src/styles.css`.
+More at https://stackoverflow.com/questions/48578559/how-to-modify-angular-material2-mat-checkbox-left-icon-size-and-color */
+.checkBoxLabelBefore .mat-checkbox-inner-container {
+  margin-left: 2px !important;
+  margin-right: 4px !important;
+}
+
+.mat-form-field {
+  display: block !important;
+}

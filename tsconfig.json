@@ -1,0 +1,92 @@
+{
+	"comments": {
+		"general": "Here are all comments, as JSON does't allow them, and Angular/TS complains bout unknown tsconfig properties",
+		"compilerOptions": {
+			"esModuleInterop_comment": "Necessary for incompatible modules to import, like socket.io"
+		},
+		"allowSyntheticDefaultImports_comment": "cannot be false, as needed for `esModuleInterop` parameter, though we can omit it"
+	},
+	"extends": "./tsconfig.colabo.json",
+	"compileOnSave": false,
+	"compilerOptions": {
+		"baseUrl": "./",
+		"declaration": false,
+		"downlevelIteration": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"lib": [
+			"es2018",
+			"dom"
+		],
+		"listFiles": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"removeComments": false,
+		"noImplicitAny": false,
+		"outDir": "./dist/out-tsc",
+		"resolveJsonModule": true,
+		// "paths": {
+		//   "@angular/*": ["node_modules/@angular/*"]
+		// },
+		"preserveSymlinks": true,
+		"sourceMap": true,
+		"target": "es2015",
+		"typeRoots": ["node_modules/@types"],
+		"types": ["hammerjs", "node"]
+	},
+	"allowSyntheticDefaultImports": true,
+	"angularCompilerOptions": {
+		"fullTemplateTypeCheck": true,
+		"strictInjectionParameters": true,
+		"buildOptimizer": true
+	},
+	"include": [
+		"src/**/*",
+		"node_modules/@colabo-puzzles/**/*",
+		"node_modules/@colabo-knalledge/**/*",
+		"node_modules/@colabo-rima/**/*",
+		"node_modules/@colabo-moderation/**/*",
+		"node_modules/@colabo-media/**/*",
+		"node_modules/@colabo-colaboflow/**/*",
+		"node_modules/@colabo-flow/**/*",
+		"node_modules/@colabo-topichat/**/*",
+		"node_modules/@colabo-utils/**/*",
+		"node_modules/@colabo-ai-ml/**/*",
+		"node_modules/@colabo-map/**/*",
+		"node_modules/@colabo-maps/**/*",
+		"node_modules/@colabo-presentation/**/*",
+		"node_modules/@colabo-sdg/**/*",
+		"node_modules/@colabo-brainstorming/**/*",
+		"node_modules/@colabo-playsust/**/*",
+		"node_modules/@colabo-headless/**/*",
+
+		"node_modules/@colabo-headless/**/*",
+
+		"node_modules/@colabo-headless/i-core/**/*",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/puzzles/headless/**/*",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/node_modules/@colabo-headless/**/*",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/**/*",
+
+		"node_modules/@colabo-headless/i-core/angular/**/*",
+		"node_modules/@colabo-headless/i-core/angular/common/**/*",
+		"node_modules/@colabo-headless/i-core/angular/common/http/**/*",
+		"node_modules/@colabo-headless/i-core/angular/common/http/index.ts",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/puzzles/headless/core-frontend-angular/angular/common/http/index.ts",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/i-core/angular/common/http/index.ts",
+		"node_modules/@colabo-headless/i-core/angular/common/http/index.ts",
+
+		"node_modules/@colabo-headless/i-core/colabo-utils/**/*",
+		"node_modules/@colabo-headless/i-core/colabo-utils/f-notifications/**/*",
+		"node_modules/@colabo-headless/i-core/colabo-utils/f-notifications/index.ts",
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/i-core/colabo-utils/f-notifications/index.ts",
+
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/i-core/angular/core/index.ts",
+
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/i-core/chalk/index.ts",
+
+		"/Users/mprinc/data/development/colabo-zontik/colabo/src/frontend/demos/colaboflow/node_modules/@colabo-headless/i-core/colabo-utils/f-notifications/index.ts"
+	]
+}
